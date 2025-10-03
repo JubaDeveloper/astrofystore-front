@@ -84,7 +84,7 @@
                 <img src="/images/astronfy.png" class="w-[40px]" alt="">
             </button>
             <div class="flex flex-col">
-                <p class="text-[14px] font-medium text-strong-950">Astrofy</p>
+                <p class="text-[14px] font-medium text-strong-950">astrofystore</p>
                 <p class="text-[12px] font-normal text-sub-600">Painel do 
                     {#if user.perfil==="ADMIN"}
                         administrador

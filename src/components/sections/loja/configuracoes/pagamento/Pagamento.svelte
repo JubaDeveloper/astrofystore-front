@@ -125,7 +125,7 @@
       <div class="flex items-center gap-6">
         <div class="flex flex-col gap-1.5">
           <div class="text-sub-600 text-[12px]">Taxa Fixa</div>
-          <Badge tema="feature-base">Astrofy: {taxaMP!.taxaInterna!}%</Badge>
+          <Badge tema="feature-base">astrofystore: {taxaMP!.taxaInterna!}%</Badge>
         </div>
         <div class="flex flex-col gap-1.5">
           <div class="text-sub-600 text-[12px]">Métodos</div>
@@ -188,7 +188,7 @@
     <div class="flex items-center gap-6">
       <div class="flex flex-col gap-1.5">
         <div class="text-sub-600 text-[12px]">Taxa Fixa</div>
-        <Badge tema="feature-base">Astrofy: 4%</Badge>
+        <Badge tema="feature-base">astrofystore: 4%</Badge>
       </div>
       <div class="flex flex-col gap-1.5">
         <div class="text-sub-600 text-[12px]">Métodos</div>

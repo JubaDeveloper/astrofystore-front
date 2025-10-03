@@ -86,7 +86,7 @@
       <div class="px-4 p-1">
         <div class="flex flex-col gap-1">
             <Site placeholder="yoursite" bind:value={form.dominio} 
-            label="URL" mandatory={true} comPrefixo={false} dominio=".astronfy.com.br" onEnter={validarDominio}/>        
+            label="URL" mandatory={true} comPrefixo={false} dominio=".astrofystorestore.com" onEnter={validarDominio}/>        
             {#if sugestoes.length>0}
                 <div class="flex flex-col gap-1 leading-3.5 text-[12px] shrink-0  text-error-base">
                     Dominio não disponivel, algumas sugestões: 
