@@ -240,8 +240,8 @@
         </div>
       </div>
       <span class="text-[12px]">
-        Desenvolvida por <a target="_blank" href="https://astrofy.site/"
-          >Astrofy</a
+        Desenvolvida por <a target="_blank" href="https://astrofystore.site/"
+          >astrofystore</a
         >
       </span>
     </div>
