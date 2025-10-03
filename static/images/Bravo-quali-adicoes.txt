@@ -1,0 +1,95 @@
+Laboratório e seus responsáveis ( admins de lab)
+
+1 - Laboratório pode ter várias unidade, por mais que o normal seja apenas 1
+2 - É obrigatório unidade em laboratório
+3 - Uma unidade, endereço e responsável técnico devem ser adicionados simultaneamente na adição do laboratório
+4 - Laboratórios não tem limites par quantas unidades possuem. tendo apenas uma NTO (Núcleo Técnico Operacional), quando vir um(a) rede/grupo, ai pode ter vários NTO's
+5 - Nome e CNPJ são suficientes para dados básicos de laboratório
+6 - Dados excluídos devem ser armazenados por no mínimo 5 anos como exigência da Anvisa na RDC 786. E de alguma forma recuperados
+7 - O seu admin possui total autonomia sobre as unidades, técnicos e equipamentos.
+8 - O seu admin pode cadastrar, edita  e excluir unidades, equipamentos e técnicos livremente.
+9 - O seu admin tem todas as funções abaixo dele junto com as suas próprias.
+10 - Ele pode acessar outros labs porém com logins diferentes.
+11 - Pode transferir equipamentos e técnicos entre unidades.
+12 - Pode haver mais de um admin do laboratório.
+13 - O laboratório pode alterar seu nome sem impactos no vínculo dos usuários, unidades e dados operacionais
+14 - Existe bloqueio do laboratório como entidade
+15 - O Administrador do Laboratório pode promover um usuário comum para Administrador de Unidade ou de Laboratório diretamente
+16 - Deve existir um limite de usuários por unidade ou lab (definido pelo admin do sistema) variando pelo acordo do plano comercial
+17 - O bloqueio de usuários deve permitir definir prazos e motivos
+18 - O sistema deve impedir cadastro duplicado de e-mails no sistema como um todo
+19 - Ao excluir um usuário, seus dados operacionais (corridas realizadas, resultados, registros) ficam arquivados
+20 - A senha precisa ser digitada duas vezes (confirmação) tanto no cadastro quanto na alteração
+21 - Deve existir algum sistema de convite, onde o usuário cria sua própria senha após receber um link de cadastro.
+
+
+Unidade e seus responsáveis (Admins de Unidade)
+
+1 - Unidades pertence a apenas um laboratório e possuem apenas CEP numero e complemento
+2 - Não tem hierarquia de unidades, apenas identificação e CNPJ resolvem.
+3 - É necessário o responsável pela unidade ser cadastrado quando for cadastrar uma nova unidade, outros dados como profissionais e equipamento são adicionados depois
+4 - Uma pessoal pode ser responsável/admin por mais de um unidade e uma unidade pode ser vários responsáveis/admin 
+5 - Ao desativar a unidade as pessoas não terão acesso, permanecendo a parte dos 5 anos de recuperação.
+6 - Caso não tenha nenhum admin de unidade, o admin do laboratório pode assumir a função. Pode fazer isso em mais de uma unidade.
+7 - Um admin de unidade pode ter cesso a outros unidades caso seja autorizado e vinculado pelo admin da respectiva unidade
+8 - o Admin de unidade pode trocar técnicos de equipamento ou realizar vínculos estáticos no cadastro inicial
+9 - Ao excluir uma unidade, os técnicos e equipamentos vinculados a ela ficam sem vínculo
+10 - A alteração de endereço da unidade não afeta de alguma forma os dados operacionais vinculados (corridas, equipamentos, etc.)
+
+Equipamentos e seus responsáveis (Analistas)
+
+1 - pode ser transferido entre unidades e deve ser rastreável por um identificador(opcional) e identificação do Lab(opcional)
+2 - ele pode aparecer como desvinculado, mesmo que ele precise aparecer quando estiver vinculado a uma unidade
+3 - não precisa obrigatoriamente de um analista responsável, mas somente ele ou outros (pode ter mais de um analista) pode inserir dados e realizar alterações. 
+4 - responsáveis por equipamento podem ser substituídos pelo admin do lab
+5 - pode estar em diferentes unidades, porém caso aconteça, o responsável por esse compartilhamento deve informar o por que como observação.
+6 - a associação com o analito pode ser feita durante a operação, corridas ou em qualquer momento
+7 - os dados de controle ficam disponíveis por 5 anos de consulta e rasteáveis, porém sem possibilidade de alterações.
+8 - os analistas podem ver todos os equipamentos, mas alterar dados somentes dos vinculados a eles
+9 - os analistas pode se vincular com mais de um equipamento ou em equipementos de unidades diferentes
+10 - os analistas podem solicitar mudança nas vinculações, sugerir mudanças e registrra não conformidades.
+11 - os analistas veem históricos de resultados e intervenções feitas no equipemento
+
+
+Sistema e seus responsáveis (admin sistema e super-admin)
+
+1 - o admin do sistema pode ter acesso a dados de controle do sistema. Sem limites. Até porque não é usado dados de cientes que possam infrigir a LGPD, apenas dados de resultados de controle.
+2 - o admin do sistema cadastra novos labs e novos admins de labs, porém um admin de láb pode criar labs unidades e usuários.
+3 - o admin do sistema pode intervir em dados operacionasis do lab (editar e exlcluir dados, alterar técnicos)
+4 - o admin do sistema não tem limitação sobre atualão ou auditoria das ações do admin do sistema
+5 - pode ter mais de um admin do sistema onde um pode nomear outro, porém o admin Wilame junior não pode er exlcuido.
+6 -  o admin do sistema não pode alterar o lab de um usuário cadastrado, apenas em caso do admin do lab perder o acesso sem recuperação, alterando a senha do admin
+7 - o admin do sistema pode cadastrar os demais admins de labs
+8 - o cadastro do laboratório deve ser feito pelo Adm. do sistema. Dependendo do plano comercial que o cliente adquira, aí ele vai solicitar um ou mais laboratórios a serem cadastrados.
+9 - ao cadastrar o admin do lab, sua conta tem uma senha temporária enviada por email
+10 - bloqueio ou adastro da conta ocasionam em envio de email.
+11 - apenas dados operacionais (corridas, equipamentos, analitos e materiais) devem ser consideranos na "exclusão recursiva"
+12 - usuários ficam bloqueados quando ocorre uma exclusão não recursiva do laboratório
+13 - apenas o admin do sistema pode mudar o CNPJ, solicitando o comprovante de atualização do CNPJ ao cliente
+14 - É possível editar apenas dados administrativos sem afetar os dados operacionais (equipamentos, corridas, etc.)
+15 - Não Existe controle de versionamento ou histórico de alterações dos laboratórios. O versionamento somente nas atualizações futuras, mas seria do software.
+16 - tem como suspender/bloquear a atividade de um laboratório.
+
+
+Gerenciamento de analitos
+
+1 - deve permitir criar as regras por equipamento, por ensaio ou por material de controle.
+2 - A escolha de ação na quebra da regra ("Alertar", "Rejeitar" ou "Desconsiderar") é aplicada apenas para análise visual, mas o ususario precisa marcar a opção "validar", "rejeitar" ou deixar sem marcar.
+3 - Não é possível adicionar regras customizadas além das pré-definidas.
+4 - A funcionalidade de importar analitos padrão permite editar esses analitos após importação mas sem alterar o padrão. Eu tento seguir a linha de um sistema flexível.
+5 - A opção de origem da imprecisão serve apenas como dado informativo
+6 - Não existe controle de versões ou histórico de alterações dos parâmetros dos analitos
+7 - Analitos são associados apenas via equipamentos
+
+Visitantes 
+
+1 - podem solicitar cadastro de interesse ( contato, solicitar demonstração )
+2 - tem possibilidade oferecer documentação e tutoriais, termos de uso e politicas de privacidade
+
+
+Perfis gerais
+
+1 - exclusão temporária é uma opção
+2 - tem hierarquia cruzada
+3 - não tem múltiplos papeis no sistema
+4 - tudo gera log, ontem so o admin do lab e do sistema acessam eles

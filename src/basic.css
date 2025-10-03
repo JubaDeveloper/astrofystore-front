@@ -1,0 +1,103 @@
+
+body{
+  margin: 0;
+}
+h1{
+  font-size: 56px;
+}
+
+h2{
+  font-size: 48px;
+}
+
+h3{
+  font-size: 40px;
+}
+
+h4{
+  font-size: 32px;
+}
+
+h5{
+  font-size: 24px;
+}
+
+h6{
+  font-size: 20px;
+}
+em{
+  font-style: italic;
+}
+ul {
+  list-style-type: disc; /* Define o marcador como blocos (discos) */
+  margin: 1em 0; /* Margem padrão acima e abaixo */
+  padding-left: 2em; /* Recuo para os marcadores */
+}
+
+ol {
+  list-style-type: decimal; /* Define o marcador como números */
+  margin: 1em 0; /* Margem padrão acima e abaixo */
+  padding-left: 2em; /* Recuo para os marcadores */
+}
+
+li {
+  margin-bottom: 0.5em; /* Espaçamento entre os itens */
+}
+a{
+  color: purple;
+  text-decoration: underline;
+  cursor: pointer;
+}
+.tiptap{
+  outline: none;
+}
+
+* {
+  font-family: "Inter",sans-serif;
+  font-optical-sizing: auto;
+  outline: none;
+}
+*:focus, *:focus-within{
+  outline: none;
+}
+button{
+  cursor:pointer;
+}
+
+*{
+  transition: all;
+  transition-duration: 300ms;
+  transition-timing-function: ease-in-out;
+}
+
+
+
+*::-webkit-scrollbar {
+  height: 6px;
+  width: 6px;
+}
+*::-webkit-scrollbar-track {
+  border-radius: 5px;
+  background-color: var(--bg-soft-200);
+}
+
+*::-webkit-scrollbar-track:hover {
+  background-color: var(--bg-sub-300);
+}
+
+*::-webkit-scrollbar-track:active {
+  background-color: var(--bg-sub-300);
+}
+
+*::-webkit-scrollbar-thumb {
+  border-radius: 5px;
+  background-color: var(--state-information-base);
+}
+
+*::-webkit-scrollbar-thumb:hover {
+  background-color: var(--state-information-dark);
+}
+
+*::-webkit-scrollbar-thumb:active {
+  background-color: var(--state-information-dark);
+}
