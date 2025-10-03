@@ -77,7 +77,7 @@
     const [data, error] = await lojaC.pegar(parseInt($idLoja));
     if (data.subdominioPersonalizado) {
       botoes[1].subLabel =
-        data.subdominioPersonalizado.subdominio + ".astrofystore.com.br";
+        data.subdominioPersonalizado.subdominio + ".astrofystore.com";
     } else {
       botoes[1].subLabel = "Nenhum subdominio configurado";
     }

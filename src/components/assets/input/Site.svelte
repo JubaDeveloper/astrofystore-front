@@ -102,7 +102,7 @@
         {/if}
 
       </div>
-      <button class="border border-soft-200 hover:border-strong-950 rounded-[10px]" onclick={()=> copiarTexto('astrofystore.com.br/' + value)}>
+      <button class="border border-soft-200 hover:border-strong-950 rounded-[10px]" onclick={()=> copiarTexto('astrofystore.com/' + value)}>
         <SvgIconPix/>
       </button>
   </div>
